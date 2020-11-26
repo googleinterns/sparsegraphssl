@@ -53,29 +53,28 @@ the citation graph datasets: Cora, Citeseer, Pubmed are supported. Set gpu = -1
 to run on cpu.
 
 Here is how to run the GAT-model: 
+
+Run the GAT model with the following command.
 ```bash
-%Run the GAT model with the following command.
-
 python training/train_ctgr.py --model GAT --data cora --labeling_rate 0.1 --gpu
-0 ```
+0 
+```
 
-For the SIGN-model, simply change the model flag. ```bash
+For the SIGN-model, simply change the model flag.
 
-%Run SIGN model with the following command.
-
+Run SIGN model with the following command.
+```bash
 python training/train_ctgr.py --model SparseGAT --data cora --labeling_rate 0.1
 --gpu 0 ```
 
-For the LabelPropagationtGAT-model, simply change the model flag. ```bash
-
-%Run LP-GAT model with three steps of label-propagation
-
+For the LabelPropagationtGAT-model, simply change the model flag. 
+Run LP-GAT model with three steps of label-propagation
+```bash
 python training/train_ctgr.py --model LabelPropagationGAT --data cora
 --labeling_rate 0.1 --label_prop_steps 3 --gpu 0 ```
 
-For the LabelPropagationtSIGN-model: ```bash
-
-%Run LP-GAT model with 3 steps of label-propagation
-
+For the LabelPropagationtSIGN-model: 
+Run LP-GAT model with 3 steps of label-propagation
+```bash
 python training/train_ctgr.py --model LabelPropagationSparseGAT --data cora
 --labeling_rate 0.1 --label_prop_steps 3 --gpu 0 ```
