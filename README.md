@@ -52,8 +52,8 @@ as below. More examples can be found in the directory run_scripts. Currently,
 the citation graph datasets: Cora, Citeseer, Pubmed are supported. Set gpu = -1
 to run on cpu.
 
-Here is how to run the GAT-model: ```bash
-
+Here is how to run the GAT-model: 
+```bash
 %Run the GAT model with the following command.
 
 python training/train_ctgr.py --model GAT --data cora --labeling_rate 0.1 --gpu
