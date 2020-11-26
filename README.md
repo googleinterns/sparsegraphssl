@@ -1,3 +1,4 @@
+**This is not an officially supported Google product.**
 # Improving semi-supervised learning with sparse attention and pseudo-labels propagation.
 
 ## Package description:
@@ -65,16 +66,19 @@ For the SIGN-model, simply change the model flag.
 Run SIGN model with the following command.
 ```bash
 python training/train_ctgr.py --model SparseGAT --data cora --labeling_rate 0.1
---gpu 0 ```
+--gpu 0 
+```
 
 For the LabelPropagationtGAT-model, simply change the model flag. 
 Run LP-GAT model with three steps of label-propagation
 ```bash
 python training/train_ctgr.py --model LabelPropagationGAT --data cora
---labeling_rate 0.1 --label_prop_steps 3 --gpu 0 ```
+--labeling_rate 0.1 --label_prop_steps 3 --gpu 0 
+```
 
 For the LabelPropagationtSIGN-model: 
 Run LP-GAT model with 3 steps of label-propagation
 ```bash
 python training/train_ctgr.py --model LabelPropagationSparseGAT --data cora
---labeling_rate 0.1 --label_prop_steps 3 --gpu 0 ```
+--labeling_rate 0.1 --label_prop_steps 3 --gpu 0 
+```
