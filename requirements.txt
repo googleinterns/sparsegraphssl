@@ -1,0 +1,19 @@
+--find-links https://download.pytorch.org/whl/torch_stable.html
+# dgl-cu101
+ipython
+seaborn
+scipy
+plotly
+tqdm
+scikit-learn
+pygraphviz
+hpbandster
+ogb
+flake8
+pylint
+ipython
+pytest
+tensorboardX
+pyyaml
+torch==1.5.0+cu101
+torchvision==0.6.0+cu101
