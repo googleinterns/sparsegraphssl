@@ -15,5 +15,5 @@ ipython
 pytest
 tensorboardX
 pyyaml
-torch==1.5.0+cu101
+torch==2.2.0
 torchvision==0.6.0+cu101
